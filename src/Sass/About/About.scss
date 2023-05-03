@@ -13,8 +13,8 @@
   align-items: center;
   justify-content: space-between;
 }
-.aboutImage {
-  width: 50px !important;
+.aboutPageImage {
+  width: 100px;
   @include breakPoint {
     width: 300px;
   }

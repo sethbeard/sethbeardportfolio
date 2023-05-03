@@ -7,7 +7,7 @@ function AboutPage() {
         <div className="aboutHeader">
           <span className="pageTitle">About</span>
           <img
-            className="aboutImage "
+            className="aboutPageImage "
             src="https://i.shgcdn.com/457687c4-243d-4a2c-8773-37f311d4e7dc/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
             alt="Secondary Portfolio Selfie"
           />

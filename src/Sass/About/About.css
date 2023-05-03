@@ -42,12 +42,12 @@
           justify-content: space-between;
 }
 
-.aboutImage {
-  width: 50px !important;
+.aboutPageImage {
+  width: 100px;
 }
 
 @media (min-width: 900px) {
-  .aboutImage {
+  .aboutPageImage {
     width: 300px;
   }
 }
