@@ -1,8 +1,8 @@
 import { Close } from "@mui/icons-material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../Sass/Projects/ProjectsModal.css";
 function ProjectModal(props) {
-  const [project, setProject] = useState(props.project);
+  const project = props.project;
 
   useEffect(() => {}, []);
   return (
