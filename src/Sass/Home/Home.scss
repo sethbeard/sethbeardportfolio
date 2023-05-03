@@ -69,7 +69,43 @@
     grid-row: 1 / span 2;
   }
 }
-
+.name {
+  animation: changeFontColor 30s infinite;
+}
+.blueIcon {
+  animation: changeFontColorTwo 30s infinite;
+}
+.whiteIcon {
+  animation: changeFontColor 30s infinite;
+}
+.links {
+  animation: changeFontColorTwo 30s infinite;
+}
+@keyframes changeFontColor {
+  0% {
+    color: $font-color;
+  }
+  50% {
+    color: $link-color;
+  }
+  100% {
+    color: $font-color;
+  }
+}
+.nameTwo {
+  animation: changeFontColorTwo 30s infinite;
+}
+@keyframes changeFontColorTwo {
+  0% {
+    color: $link-color;
+  }
+  50% {
+    color: $font-color;
+  }
+  100% {
+    color: $link-color;
+  }
+}
 //About Section Classes//
 .about {
   @include navBlock;

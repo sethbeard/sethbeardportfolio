@@ -96,7 +96,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
-  border: 5px dashed #d8d2cb41;
+  border: 5px dashed #d8d2cb;
   display: flex;
   flex-direction: column;
   font-family: Helvetica, sans-serif;
@@ -124,9 +124,82 @@
   }
 }
 
+.name {
+  -webkit-animation: changeFontColor 30s infinite;
+          animation: changeFontColor 30s infinite;
+}
+
+.blueIcon {
+  -webkit-animation: changeFontColorTwo 30s infinite;
+          animation: changeFontColorTwo 30s infinite;
+}
+
+.whiteIcon {
+  -webkit-animation: changeFontColor 30s infinite;
+          animation: changeFontColor 30s infinite;
+}
+
+.links {
+  -webkit-animation: changeFontColorTwo 30s infinite;
+          animation: changeFontColorTwo 30s infinite;
+}
+
+@-webkit-keyframes changeFontColor {
+  0% {
+    color: #d8d2cb;
+  }
+  50% {
+    color: #398ab9;
+  }
+  100% {
+    color: #d8d2cb;
+  }
+}
+
+@keyframes changeFontColor {
+  0% {
+    color: #d8d2cb;
+  }
+  50% {
+    color: #398ab9;
+  }
+  100% {
+    color: #d8d2cb;
+  }
+}
+
+.nameTwo {
+  -webkit-animation: changeFontColorTwo 30s infinite;
+          animation: changeFontColorTwo 30s infinite;
+}
+
+@-webkit-keyframes changeFontColorTwo {
+  0% {
+    color: #398ab9;
+  }
+  50% {
+    color: #d8d2cb;
+  }
+  100% {
+    color: #398ab9;
+  }
+}
+
+@keyframes changeFontColorTwo {
+  0% {
+    color: #398ab9;
+  }
+  50% {
+    color: #d8d2cb;
+  }
+  100% {
+    color: #398ab9;
+  }
+}
+
 .about {
   border-radius: 20px;
-  border: 5px dashed #d8d2cb41;
+  border: 5px dashed #d8d2cb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +285,7 @@
       -ms-flex-direction: column-reverse !important;
           flex-direction: column-reverse !important;
   border-radius: 20px;
-  border: 5px dashed #d8d2cb41;
+  border: 5px dashed #d8d2cb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,7 +328,7 @@
   grid-row: 3;
   cursor: pointer;
   border-radius: 20px;
-  border: 5px dashed #d8d2cb41;
+  border: 5px dashed #d8d2cb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +375,7 @@
       -ms-flex-direction: row-reverse !important;
           flex-direction: row-reverse !important;
   border-radius: 20px;
-  border: 5px dashed #d8d2cb41;
+  border: 5px dashed #d8d2cb;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

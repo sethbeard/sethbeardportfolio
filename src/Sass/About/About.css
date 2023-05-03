@@ -102,8 +102,8 @@ a {
 
 .imageContainer {
   overflow: hidden;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -116,6 +116,8 @@ a {
 @media (min-width: 900px) {
   .imageContainer {
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
   }
 }
 
