@@ -1,0 +1,18 @@
+@import "../Variables.scss";
+.contactPage {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form {
+  padding-block: 2rem;
+  color: #d8d2cb;
+}
+.submitButton {
+  margin-block: 2rem;
+}
+.successMessage {
+  color: $font-color;
+}

@@ -1,0 +1,130 @@
+.pageTitle {
+  font-size: 30px;
+  color: #398ab9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  .pageTitle {
+    font-size: 80px;
+  }
+}
+
+.pageTitle::after {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: #d8d2cb;
+  top: 15px;
+  height: 6px;
+  margin-left: 0.25em;
+  width: 30vw;
+}
+
+@media (min-width: 900px) {
+  .pageTitle::after {
+    top: 45px;
+    margin-left: 1rem;
+  }
+}
+
+.aboutHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.aboutImage {
+  width: min(300px, 75%) !important;
+}
+
+.aboutBody {
+  padding-top: 10px;
+}
+
+.arduino > p {
+  margin-top: 0;
+}
+
+.aboutBody {
+  font-size: 15px;
+  color: #d8d2cb;
+  text-align: left;
+}
+
+@media (min-width: 900px) {
+  .aboutBody {
+    font-size: 30px;
+  }
+}
+
+.aboutMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5em;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.arduino {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+a {
+  color: #398ab9;
+}
+
+.imageContainer {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+@media (min-width: 900px) {
+  .imageContainer {
+    border-radius: 50%;
+  }
+}
+
+.arduinoImage {
+  opacity: 0.25;
+  width: 100%;
+}
+
+hr {
+  color: #398ab9;
+}
+/*# sourceMappingURL=About.css.map */

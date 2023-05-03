@@ -1,0 +1,124 @@
+@import "../Variables.scss";
+.modalContainer {
+  border-radius: 10px;
+  width: 100vw;
+  margin: 0 auto;
+  max-height: 100vh;
+  overflow: scroll;
+}
+.modalGrid {
+  font-weight: bolder;
+  background-color: rgb(0, 91, 128);
+  color: $font-color;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  max-width: 100vw;
+  gap: 0.5em;
+  min-height: 100vh;
+  align-items: center;
+
+  @include breakPoint {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    max-height: 100vh;
+  }
+}
+
+.modalHeader {
+  padding-bottom: 0.75em;
+
+  @include breakPoint {
+    border-bottom: $dashed-border;
+    margin-bottom: 0.75em;
+    display: flex;
+    text-align: center;
+    gap: 1.5em;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1 / span 4;
+  }
+}
+.modalImage {
+  @include breakPoint {
+    width: 30%;
+  }
+}
+.modalImage > img {
+  width: 100%;
+  border-radius: 25px;
+}
+.modalTitle {
+  font-size: $titleFontMobile;
+  padding-inline: 0.5em;
+  @include breakPoint {
+    font-size: $subTitleFont;
+    border-right: $dashed-border;
+    border-left: $dashed-border;
+  }
+}
+
+.textBox {
+  border: $dashed-border;
+  font-size: $subTitleFontMobile;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  @include breakPoint {
+    height: 100%;
+  }
+}
+.modalTech {
+  @include breakPoint {
+    font-size: $paragraphFont;
+    border: none;
+    border-right: $dashed-border;
+    border-bottom: $dashed-border;
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+  }
+}
+.modalLinks {
+  width: 100%;
+  padding: 0.5em;
+  font-size: $titleFontMobile;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  @include breakPoint {
+    font-size: $subTitleFont;
+    flex-direction: column;
+    width: 30%;
+  }
+  a {
+    color: $link-color;
+    cursor: pointer;
+  }
+}
+.modalDescription {
+  @include breakPoint {
+    font-size: $paragraphFont;
+    border: none;
+    border-right: $dashed-border;
+    border-bottom: $dashed-border;
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 3;
+  }
+}
+
+.closeIcon {
+  color: $font-color;
+  position: absolute;
+  background-color: black;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  left: 0.25px;
+  cursor: pointer;
+}

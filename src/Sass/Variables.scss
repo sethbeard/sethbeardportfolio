@@ -1,0 +1,59 @@
+$background-color: #061118;
+$font-stack: Helvetica, sans-serif;
+$font-color: #d8d2cb;
+$link-color: #398ab9;
+$dashed-border: 5px dashed $font-color;
+$titleFontMobile: 30px;
+$subTitleFontMobile: 20px;
+$paragraphFontMobile: 15px;
+$titleFont: 80px;
+$subTitleFont: 60px;
+$paragraphFont: 30px;
+$breakPoint: 900px;
+@mixin commonBorder {
+  border-radius: 20px;
+  border: $dashed-border;
+}
+
+@mixin navBlock {
+  @include commonBorder;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-stack;
+  font-size: $titleFontMobile;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  @include breakPoint {
+    font-size: $titleFont;
+  }
+}
+
+@mixin breakPoint {
+  @media (min-width: #{$breakPoint}) {
+    @content;
+  }
+}
+
+@mixin sectionTitle {
+  font-size: $titleFontMobile;
+  color: $link-color;
+  display: flex;
+  @include breakPoint {
+    font-size: $titleFont;
+  }
+}
+@mixin pageTitleAfter {
+  content: "";
+  display: block;
+  position: relative;
+  background-color: $font-color;
+  top: ($titleFontMobile/2);
+  height: 6px;
+  margin-left: 0.25em;
+  width: 30vw;
+  @include breakPoint {
+    top: ($titleFont/2 + 5px);
+    margin-left: 1rem;
+  }
+}

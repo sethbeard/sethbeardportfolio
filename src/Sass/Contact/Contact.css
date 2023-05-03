@@ -1,0 +1,27 @@
+.contactPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form {
+  padding-block: 2rem;
+  color: #d8d2cb;
+}
+
+.submitButton {
+  margin-block: 2rem;
+}
+
+.successMessage {
+  color: #d8d2cb;
+}
+/*# sourceMappingURL=Contact.css.map */

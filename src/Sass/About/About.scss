@@ -1,0 +1,68 @@
+@import "../Variables.scss";
+
+.pageTitle {
+  @include sectionTitle;
+}
+.pageTitle::after {
+  @include pageTitleAfter;
+}
+
+//handles main header and image
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutImage {
+  width: #{"min(300px, 75%)"} !important;
+}
+.aboutBody {
+  padding-top: 10px;
+}
+.arduino > p {
+  margin-top: 0;
+}
+.aboutBody {
+  font-size: $paragraphFontMobile;
+  color: $font-color;
+  text-align: left;
+  @include breakPoint {
+    font-size: $paragraphFont;
+  }
+}
+.aboutMain {
+  display: flex;
+  padding: 0.5em;
+  min-height: 100vh;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  box-sizing: border-box;
+}
+.arduino {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+a {
+  color: $link-color;
+}
+.imageContainer {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  justify-self: center;
+  align-self: center;
+  flex-shrink: 1;
+  @include breakPoint {
+    border-radius: 50%;
+  }
+}
+.arduinoImage {
+  opacity: 0.25;
+  width: 100%;
+}
+hr {
+  color: $link-color;
+}

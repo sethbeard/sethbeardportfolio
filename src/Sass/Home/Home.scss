@@ -1,0 +1,144 @@
+@import "../variables.scss";
+
+//Main Page Grid//
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 25%);
+  padding: 0.5em;
+  box-sizing: border-box;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  @include breakPoint {
+    grid-template-columns: repeat(3, 32.5%);
+  }
+}
+
+//re-usable classes //
+.name {
+  margin: 0;
+  padding: 0;
+  color: $font-color;
+}
+.nameTwo {
+  margin: 0;
+  padding: 0;
+  color: $link-color;
+  font-family: sans-serif;
+}
+.homeIcon {
+  font-size: $paragraphFont !important;
+  @include breakPoint {
+    font-size: $titleFont !important;
+  }
+}
+
+.whiteIcon {
+  color: $font-color;
+}
+.blueIcon {
+  color: $link-color;
+}
+
+// Name/Title Block//
+.titleContainer {
+  @include breakPoint {
+    display: flex;
+  }
+}
+.subTitleContainer {
+  font-size: $subTitleFontMobile;
+  @include breakPoint {
+    font-size: $subTitleFont;
+    display: flex;
+  }
+}
+.nameContainer {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include navBlock;
+  @include breakPoint {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+//About Section Classes//
+.about {
+  @include navBlock;
+  cursor: pointer;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  @include breakPoint {
+    grid-row: 1 / span 4;
+    grid-column: 3;
+  }
+}
+.aboutImage {
+  width: 75%;
+  mix-blend-mode: screen;
+  border-radius: 20%;
+}
+.linkWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+.links {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: $subTitleFontMobile;
+  margin-block: 0;
+  @include breakPoint {
+    font-size: $subTitleFont;
+  }
+}
+
+//Other Three Blocks
+.projects {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  cursor: pointer;
+  flex-direction: column-reverse !important;
+  @include navBlock;
+  @include breakPoint {
+    grid-row: 3 / span 2;
+    flex-direction: row !important;
+  }
+}
+.contact {
+  grid-column: 2;
+  grid-row: 3;
+  cursor: pointer;
+  @include navBlock;
+  @include breakPoint {
+    flex-direction: row;
+  }
+}
+.resume {
+  cursor: pointer;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  flex-direction: row-reverse !important;
+  @include navBlock;
+  @include breakPoint {
+    grid-column: 2;
+  }
+}
+
+.disableSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
