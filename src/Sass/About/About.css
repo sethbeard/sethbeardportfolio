@@ -43,7 +43,7 @@
 }
 
 .aboutImage {
-  width: 100px;
+  width: 50px !important;
 }
 
 @media (min-width: 900px) {
