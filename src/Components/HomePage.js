@@ -8,7 +8,7 @@ import AssignmentIcon from "@mui/icons-material/Assignment";
 import "../Sass/Home/Home.css";
 function HomePage() {
   const anchorLink = (anchor) => {
-    document.location = "https://seth-beard.com/#" + anchor;
+    document.location = "https://www.seth-beard.com/#" + anchor;
   };
   return (
     <nav className="grid section disableSelect">
