@@ -14,7 +14,10 @@
   justify-content: space-between;
 }
 .aboutImage {
-  width: #{"min(300px, 75%)"} !important;
+  width: 100px;
+  @include breakPoint {
+    width: 300px;
+  }
 }
 .aboutBody {
   padding-top: 10px;
@@ -50,8 +53,8 @@ a {
 }
 .imageContainer {
   overflow: hidden;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   justify-self: center;
   align-self: center;
   flex-shrink: 1;
